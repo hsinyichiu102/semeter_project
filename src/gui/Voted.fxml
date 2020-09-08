@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="gui.SearchNewsController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="740.0">
+         <children>
+            <Label layoutX="334.0" layoutY="182.0" text="Voted!" textFill="#0e0075">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="276.0" layoutY="289.0" mnemonicParsing="false" onAction="#browseNewsButtonPushed" text="Back to Browse News">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

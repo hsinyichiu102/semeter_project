@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <StackPane maxWidth="740.0" prefHeight="500.0">
+         <children>
+            <VBox spacing="10.0">
+               <children>
+                  <Label text="To see instructions, move cursor to buttons" textFill="RED" />
+                  <GridPane prefHeight="250.0" prefWidth="700.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="105.0" text="Welcome!" textFill="#0b0061" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sessionLabel" text="" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="addNews" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNewsButtonPushed" text="Add News" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="click here to add news to database" />
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="browseNewsButton" mnemonicParsing="false" onAction="#browseNewsButtonPushed" text="Browse News" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="click here to search news and vote for its reliability" />
+                           </tooltip>
+                        </Button>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="320.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="296.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="296.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets bottom="100.0" left="100.0" top="50.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <StackPane prefHeight="-1.0" prefWidth="-1.0">
+                     <children>
+                        <Button fx:id="logoutButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#logoutButtonPushed" text="Logout" StackPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>
