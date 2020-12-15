@@ -1,6 +1,7 @@
 ## semeter project- bilbao
 
 > this project is the group project with bilbao team member
+
 ####what the program provides:
 >* A JAVA project with Database, server, client and GUI
 >* A simple way to provide news readers a reference about the news is real or fake
