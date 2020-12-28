@@ -15,3 +15,11 @@ this project is the group project with bilbao team member
 >* using thread to deal multi-request from many users at same time
 >* database to store the voting and comment from user
 >we used the vote number and comment to get the rate of the truth and fake  
+
+#### screenshot example of the program:
+
+the add news page is to upload a news for other reader to vote.
+![add News page](image/addNews.png)
+
+the voting newss page is to vote if the news is true or fake and the result of the percentage would be displayed on the right down corner.
+![voting News](image/voting.png)
