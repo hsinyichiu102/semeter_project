@@ -21,5 +21,6 @@ this project is the group project with bilbao team member
 the add news page is to upload a news for other reader to vote.
 ![add News page](image/addNews.png)
 
-the voting newss page is to vote if the news is true or fake and the result of the percentage would be displayed on the right down corner.
+the voting newss page is to vote if the news is true or fake.
+the relability sign would be checked by the admin or automatically if the percentage is more than 80%.
 ![voting News](image/voting.png)
